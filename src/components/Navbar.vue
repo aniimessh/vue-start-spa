@@ -15,7 +15,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav d-flex justify-content-between">
-          <li v-for="(page, index) in pages">
+          <li v-for="(page, index) in showPublishedPages">
             <navbar-link
               :page="page"
               :isActive="activePage == index"
@@ -40,6 +40,11 @@ export default {
   },
   created() {
     this.getThemeSettings();
+  },
+  computed: {
+    showPublishedPages(){
+      return this.pages.filter(p => p.published)
+    }
   },
   props: ["pages", "activePage", "navLinkClick"],
   data() {

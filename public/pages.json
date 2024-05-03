@@ -5,7 +5,8 @@
         "link": {
             "text": "Home",
             "url": "index.html"
-        }
+        },
+        "published": true
     },
     {
         "title": "Hello About",
@@ -13,7 +14,8 @@
         "link": {
             "text": "About",
             "url": "about.html"
-        }
+        },
+        "published": true
     },
     {
         "title": "Hello Contact",
@@ -21,6 +23,7 @@
         "link": {
             "text": "Contact",
             "url": "contact.html"
-        }
+        },
+        "published": false
     }
 ]
